@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    
+</head>
+<body>
+    <h1>
+        Письмо Санте
+    </h1>
+    <h4>
+        Дорогой друг, не стесняйся и расскажи Санте о том, кто ты и о том, что ты хочешь получить на Рождество.
+
+    </h4>
+<form method="post" id="signUp-form">
+    <div>
+        <label>
+            
+            <input  placeholder="Логин">
+        </label>
+    </div>
+    <br>
+    <div>
+        <label>
+      
+            <input  placeholder="Пароль">
+        </label>
+    </div>
+        <br>
+    <div>
+        <label>
+      
+            <input  placeholder="Имя">
+        </label>
+    </div>
+    <br>
+    </div>
+    Пол:
+    <div>
+        <input id="gender1" type="radio" name="gender" value="boy">
+        <label for="gender1">Мальчик</label>
+    
+        <input id="gender2" type="radio" name="gender" value="girl">
+        <label for="gender2">Девочка</label>
+    </div>
+    <br>
+    <div>
+        <label for="birth_date">День рождения</label>
+        <input type="date" id="birth_date" name="birthDate"
+               value="дд.мм.гггг"
+               min="1900-01-01" max="2020-01-01">
+        
+    </div>
+<br>
+
+    <div>
+        <label>
+            
+            <select name="contact" form="signUp-form">
+                <option value="city1">Харьков</option>
+                <option value="city2">Киев</option>
+                <option value="city3">Лейпциг</option>
+            </select>
+        </label>
+    </div>
+    <h4>
+        Выбери цвет своей новой игрушки:
+    </h4>
+    <div>
+        <input type="color" id="favorite_color" name="color"
+               value="#e66465">
+        <label for="favorite_color">Шапочка</label>
+    </div>
+    <div>
+        <input type="color" id="favorite_color" name="color"
+               value="#AEC09A">
+        <label for="favorite_color">Костюм</label>
+    </div>
+    <br>
+</div>
+Ты был хорошим ребёнком?
+<div>
+    <input id="behavior1" type="radio" name="behavior" value="yes">
+    <label for="behavior1">Да</label>
+
+    <input id="behavior2" type="radio" name="behavior" value="no">
+    <label for="behavior2">Нет</label>
+</div>
+   <br>
+    <input type="submit" value="Отправить письмо Санте">
+</form>
+</body>
+</html>
